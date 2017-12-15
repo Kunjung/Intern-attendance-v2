@@ -1,0 +1,68 @@
+<html>
+<head>
+
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- 
+
+  <script src="https://fb.me/react-15.0.1.js"></script>
+  <script src="https://fb.me/react-dom-15.0.1.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+ -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+
+  <title>Intern Attendance App</title>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <p class="bg-primary">Facial Recognition</p>
+          <h3>Take your picture to get your password</h3>
+          
+          <form>
+            <div id="container"></div>
+            <label>Day Number</label>
+            <input type="text" id="day" name="day" value="1"/>
+            <br/>
+            <button id="takepicture" type="button" class="btn btn-primary btn-lg">Take Picture</button>
+          </form>
+
+          <h1 class="bg-danger" id="hasFace">Is there a Face?</h1>
+          <button id="detectface" type="button" class="btn btn-danger btn-lg">Detect Face</button>
+
+          <br/>
+          <hr style="background-color: #fff; border-top: 2px dashed #8c8b8b;">
+
+          <h3>Register Your Image If You're a First Time Intern</h3>
+          <form>
+            <label>Name of New Intern</label>
+            <input type="text" name="intern_name" id="intern_name" required/>
+            <br/>
+            <button id="firstpicture" type="button" class="btn btn-primary btn-lg">Upload First Picture Online</button>
+
+          </form>
+          <h4 class="bg-danger" id="hasUploaded">Has Uploaded or not?</h4>
+        
+        </div>
+      </div>
+
+    </div>
+      
+  </div>
+
+
+  <script type="text/javascript" src="app.js"></script>
+
+
+</body>
+</html>
