@@ -151,5 +151,5 @@ function draw() {
   pop();
 
   //filter(BLUR, 3);
-  filter(INVERT);
+  //filter(INVERT);
 }
